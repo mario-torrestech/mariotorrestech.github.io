@@ -12,7 +12,7 @@ This repository documents my homelab setup, which I use for learning, testing, a
   - Storage: 250GB SSD
 
 ### Network Architecture
-<div class="mermaid">
+```mermaid
 flowchart LR
     Internet --- Router
     Router --- Proxmox
@@ -26,7 +26,7 @@ flowchart LR
     end
     
     Pihole --- ExternalDNS[External DNS<br>Cloudflare]
-</div>
+```
 
 ### Network Overview
 - Network flows through Proxmox Hypervisor hosting:
