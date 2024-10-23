@@ -62,11 +62,6 @@ flowchart LR
 
 ## Projects & Learning
 
-### Current Projects
-- [ ] Implementing centralized logging (ELK Stack)
-- [ ] Setting up Kubernetes cluster
-- [ ] Automated backup solution
-
 ### Completed Projects
 - [x] Proxmox hypervisor implementation
 - [x] DNS management with Pi-hole
