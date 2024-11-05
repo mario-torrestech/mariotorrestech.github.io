@@ -1,17 +1,19 @@
 # Security Operations & Testing Homelab
 
 ## 🎯 Overview
-A dedicated learning environment focused on cybersecurity, penetration testing, and security operations. This lab serves as both a practical infrastructure and a comprehensive security learning platform where I actively develop my cybersecurity skills.
+A dedicated learning environment focused on cybersecurity, penetration testing, and security operations. This lab serves as both a practical infrastructure and a comprehensive security learning platform where I actively develop my cybersecurity skills
+
+[About Me / Professional Background](about.md)
 
 ## 🎓 Current Security Learning Path
-- Actively pursuing PNPT (Practical Network Penetration Tester) certification
+- Actively pursuing [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification
 - Building and maintaining security testing environments
 - Developing hands-on experience with security tools and techniques
 
 ## 🖥️ Infrastructure 
 
 ### Core Hardware
-- Primary Server: Intel NUC8i7HNK1 (Hades Canyon)
+- Primary Server: Intel NUC8 (Hades Canyon)
   - CPU: Intel Core i7-8709G with Radeon RX Vega M GH graphics
   - RAM: 64GB DDR4 
   - Storage: 
@@ -60,10 +62,6 @@ A dedicated learning environment focused on cybersecurity, penetration testing, 
   - Building test domain infrastructure
   - Implementing security controls
   - Creating attack and defense scenarios
-- SIEM Implementation:
-  - Evaluating security monitoring solutions
-  - Planning log aggregation infrastructure
-  - Designing alert frameworks
 - Basic System Monitoring:
   - Custom Grafana dashboards
 
@@ -86,4 +84,3 @@ A dedicated learning environment focused on cybersecurity, penetration testing, 
 - Implement SIEM solution for centralized security monitoring
 - Develop automation for security testing and response
 - Document findings and establish best practices
-- Create detailed documentation of findings
