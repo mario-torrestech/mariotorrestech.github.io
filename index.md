@@ -1,89 +1,89 @@
-# My Homelab Infrastructure
+# Security Operations & Testing Homelab
 
-## Overview
-This repository documents my homelab setup, which I use for learning, testing, and running various self-hosted services. The lab provides hands-on experience with enterprise technologies and best practices in a controlled environment.
+## 🎯 Overview
+A dedicated learning environment focused on cybersecurity, penetration testing, and security operations. This lab serves as both a practical infrastructure and a comprehensive security learning platform where I actively develop my cybersecurity skills.
 
-## Infrastructure
+## 🎓 Current Security Learning Path
+- Actively pursuing PNPT (Practical Network Penetration Tester) certification
+- Building and maintaining security testing environments
+- Developing hands-on experience with security tools and techniques
 
-### Hardware
-- Intel Hades Canyon NUC
-  - CPU: Intel Core i7-8809G
-  - RAM: 16GB
-  - Storage: 250GB SSD
+## 🖥️ Infrastructure 
 
-### Network Architecture
-<div class="mermaid">
-flowchart LR
-    Internet --- Router
-    Router --- Proxmox
+### Core Hardware
+- Primary Server: Intel NUC8i7HNK1 (Hades Canyon)
+  - CPU: Intel Core i7-8709G with Radeon RX Vega M GH graphics
+  - RAM: 64GB DDR4 
+  - Storage: 
+    - 250GB SSD (OS and Security Tools)
+    - 1TB SSD (Lab Environments and Testing)
 
-    subgraph Proxmox[Proxmox Hypervisor]
-        subgraph Internal Network
-            Pihole
-            Pihole --- ReverseProxy[Reverse Proxy<br>NGINX Proxy Manager]
-            ReverseProxy --- Services[Internal Services]
-        end
-    end
-    
-    Pihole --- ExternalDNS[External DNS<br>Cloudflare]
-</div>
+### Testing Environments
+- Active Directory Lab Environment (In Progress)
+  - Windows Server infrastructure for security testing
+  - Simulated enterprise environment for attack/defense scenarios
+  - Testing common AD vulnerabilities and misconfigurations
+- Kali Linux Environment
+  - Dedicated VM for security testing
+  - Penetration testing tools suite
+  - Network analysis capabilities
 
-### Network Overview
-- Network flows through Proxmox Hypervisor hosting:
-  - Pi-hole for DNS management
-     - Handles internal service resolution
-     - Forwards external requests to Cloudflare
-  - NGINX Proxy Manager
-     - Routes traffic to internal services
-     - Manages internal service access
-  - Internal services running as VMs/containers
+### Production Infrastructure
+- Hypervisor: Proxmox VE 8.0
+  - Segmented virtual networks
+  - Isolated testing environments
+  - Resource management for concurrent lab operations
+- Container Platforms:
+  - Proxmox LXCs for system services
+  - Docker for application containers
 
-## Core Services
+## 🔒 Security Implementation
 
-### Virtualization
-- Proxmox VE
-   - Type 1 hypervisor
-   - Web-based management
-   - Container & VM support
-   - Primary host for all services
+### Network Security Architecture
+- Networking:
+  - Router: Unifi Cloud Gateway
+- Network Segmentation:
+  - VLAN 1: Main network (Production systems)
+  - VLAN 2: IoT devices (Isolated)
+  - VLAN 3: Guest network (Zero-trust)
+  - Lab Networks: Isolated security testing environments
 
-### DNS Management
-- Pi-hole
-   - Network-wide ad blocking
-   - Internal DNS resolution
-   - External DNS forwarding to Cloudflare
-   - Custom domain management
+### Security Controls
+- Network Security Monitoring:
+  - Pi-hole for DNS-level threat detection and filtering
+  - NGINX Proxy Manager for SSL termination and traffic inspection
+  - Step-ca for certificate lifecycle management
+  - Tailscale VPN for encrypted remote access and activity logging
 
-### Reverse Proxy
-- NGINX Proxy Manager
-   - Internal service routing
-   - Local domain management
-   - Web interface for configuration
+## 🔄 In Progress Projects
+- Active Directory Security Lab:
+  - Building test domain infrastructure
+  - Implementing security controls
+  - Creating attack and defense scenarios
+- SIEM Implementation:
+  - Evaluating security monitoring solutions
+  - Planning log aggregation infrastructure
+  - Designing alert frameworks
+- Basic System Monitoring:
+  - Custom Grafana dashboards
 
-## Projects & Learning
+## 💾 Backup & Storage
+- Synology DS920+ NAS (2x 8TB drives in SHR)
+- Backblaze B2 for off-site backup
+- Regular backup testing and verification
 
-### Completed Projects
-- [x] Proxmox hypervisor implementation
-- [x] DNS management with Pi-hole
-- [x] Internal service routing via NGINX Proxy Manager
+## 📚 Professional Development & Roadmap
 
-### Skills Demonstrated
-- Virtualization (Proxmox VE)
-- DNS Management and Configuration
-- Reverse Proxy Implementation
-- Network Architecture Design
-- Linux System Administration
-- Infrastructure Documentation
+### Current Focus
+- Pursuing PNPT certification with emphasis on:
+  - Network penetration testing methodology
+  - Active Directory security architecture
+  - Attack surface analysis and defense
+  - Security monitoring and incident response
 
-### Future Plans
-- Implement monitoring and alerting
-- Add more internal services
-- Expand DNS capabilities
-
-### Resources & Documentation
-- [Proxmox VE Documentation](https://www.proxmox.com/en/proxmox-ve/documentation)
-- [Pi-hole Documentation](https://docs.pi-hole.net/)
-- [NGINX Proxy Manager Documentation](https://nginxproxymanager.com/guide/)
-
----
-*Last Updated: October 2024*
+### Next Steps
+- Enhance AD lab environment with attack vectors and monitoring
+- Implement SIEM solution for centralized security monitoring
+- Develop automation for security testing and response
+- Document findings and establish best practices
+- Create detailed documentation of findings
