@@ -1,86 +1,58 @@
-# Security Operations & Testing Homelab
-
-## 🎯 Overview
-A dedicated learning environment focused on cybersecurity, penetration testing, and security operations. This lab serves as both a practical infrastructure and a comprehensive security learning platform where I actively develop my cybersecurity skills
+# Mario Torres
+Security operations and testing homelab documentation.
 
 [About Me / Professional Background](about.md)
 
-## 🎓 Current Security Learning Path
-- Actively pursuing [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification
-- Building and maintaining security testing environments
-- Developing hands-on experience with security tools and techniques
+# 🎯 Overview
+A dedicated cybersecurity learning environment for penetration testing and security operations, serving as both practical infrastructure and a comprehensive training platform.
 
-## 🖥️ Infrastructure 
+# 🎓 Current Path
+* Actively pursuing [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification
+* Building security testing environments
+* Hands-on experience with security tools and techniques
 
-### Core Hardware
-- Primary Server: Intel NUC8 (Hades Canyon)
-  - CPU: Intel Core i7-8709G with Radeon RX Vega M GH graphics
-  - RAM: 64GB DDR4 
-  - Storage: 
-    - 250GB SSD (OS and Security Tools)
-    - 1TB SSD (Lab Environments and Testing)
+# 🖥️ Infrastructure
+Core Hardware (Intel NUC8 Hades Canyon)
+* Intel Core i7-8709G with Radeon RX Vega M GH
+* 64GB DDR4 RAM
+* Storage: 250GB SSD (OS/Tools), 1TB SSD (Lab/Testing)
 
-### Testing Environments
-- Active Directory Lab Environment (In Progress)
-  - Windows Server infrastructure for security testing
-  - Simulated enterprise environment for attack/defense scenarios
-  - Testing common AD vulnerabilities and misconfigurations
-- Kali Linux Environment
-  - Dedicated VM for security testing
-  - Penetration testing tools suite
-  - Network analysis capabilities
+Testing Environments
+* Active Directory Lab (In Progress)
+  * Windows Server security testing infrastructure
+  * Enterprise attack/defense scenarios
+  * AD vulnerabilities and misconfigurations testing
+* Kali Linux Environment
+  * Security testing VM
+  * Penetration testing suite
+  * Network analysis tools
 
-### Production Infrastructure
-- Hypervisor: Proxmox VE 8.0
-  - Segmented virtual networks
-  - Isolated testing environments
-  - Resource management for concurrent lab operations
-- Container Platforms:
-  - Proxmox LXCs for system services
-  - Docker for application containers
+Production Infrastructure
+* Proxmox VE 8.0 Hypervisor
+  * Segmented networks
+  * Isolated test environments
+  * Concurrent lab operations
+* Containers: Proxmox LXCs and Docker
 
-## 🔒 Security Implementation
+# 🔒 Security Implementation
+* Network Segmentation
+  * VLAN 1: Production
+  * VLAN 2: IoT (Isolated)
+  * VLAN 3: Guest (Zero-trust)
+  * Lab Networks (Isolated)
+* Controls & Monitoring
+  * Pi-hole: DNS filtering
+  * NGINX Proxy Manager: SSL/traffic inspection
+  * Step-ca: Certificate management
+  * Tailscale: VPN access and logging
 
-### Network Security Architecture
-- Networking:
-  - Router: Unifi Cloud Gateway
-- Network Segmentation:
-  - VLAN 1: Main network (Production systems)
-  - VLAN 2: IoT devices (Isolated)
-  - VLAN 3: Guest network (Zero-trust)
-  - Lab Networks: Isolated security testing environments
+# 💾 Storage & Backup
+* Synology DS920+ (2x 8TB SHR)
+* Backblaze B2 off-site backup
 
-### Security Controls
-- Network Security Monitoring:
-  - Pi-hole for DNS-level threat detection and filtering
-  - NGINX Proxy Manager for SSL termination and traffic inspection
-  - Step-ca for certificate lifecycle management
-  - Tailscale VPN for encrypted remote access and activity logging
-
-## 🔄 In Progress Projects
-- Active Directory Security Lab:
-  - Building test domain infrastructure
-  - Implementing security controls
-  - Creating attack and defense scenarios
-- Basic System Monitoring:
-  - Custom Grafana dashboards
-
-## 💾 Backup & Storage
-- Synology DS920+ NAS (2x 8TB drives in SHR)
-- Backblaze B2 for off-site backup
-- Regular backup testing and verification
-
-## 📚 Professional Development & Roadmap
-
-### Current Focus
-- Pursuing PNPT certification with emphasis on:
-  - Network penetration testing methodology
-  - Active Directory security architecture
-  - Attack surface analysis and defense
-  - Security monitoring and incident response
-
-### Next Steps
-- Enhance AD lab environment with attack vectors and monitoring
-- Implement SIEM solution for centralized security monitoring
-- Develop automation for security testing and response
-- Document findings and establish best practices
+# 📚 Development Roadmap
+* Complete PNPT certification
+* Enhance AD lab with attack vectors
+* Implement SIEM solution
+* Automate security testing/response
+* Document findings and practices
