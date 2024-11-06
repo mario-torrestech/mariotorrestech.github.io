@@ -1,6 +1,9 @@
 # Professional Background
 IT professional focused on cybersecurity with expertise in enterprise support and security operations.
 
+## Current Projects
+🚀 [Homelab](index.md) - Documenting my journey in building and maintaining a home lab environment for cybersecurity testing and learning.
+
 ## 🎓 Education
 - B.S. in Information Systems
 - University of North Texas, Class of 2020
