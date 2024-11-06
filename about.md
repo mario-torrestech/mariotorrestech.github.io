@@ -30,4 +30,4 @@ Fidelity Investments | December 2020 - Present
 - [LinkedIn Profile](https://www.linkedin.com/in/tmario)
 
 ---
-*Return to [Homelab Documentation](README.md)*
+*Return to [Homelab Documentation](index.md)*

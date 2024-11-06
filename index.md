@@ -4,35 +4,33 @@ Security operations and testing homelab documentation.
 [About Me / Professional Background](about.md)
 
 # 🎯 Overview
-A dedicated cybersecurity learning environment for penetration testing and security operations, serving as both practical infrastructure and a comprehensive training platform.
+A dedicated cybersecurity learning environment for penetration testing and security operations, serving as both practical infrastructure and a comprehensive training platform for the PNPT (Practical Network Penetration Tester) certification and other personal projects.
 
 # 🎓 Current Path
 * Actively pursuing [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification
-* Building security testing environments
+* Building security testing environments in Linux and Windows
 * Hands-on experience with security tools and techniques
 
 # 🖥️ Infrastructure
-Core Hardware (Intel NUC8 Hades Canyon)
-* Intel Core i7-8709G with Radeon RX Vega M GH
-* 64GB DDR4 RAM
+
+## Core Hardware
+Intel NUC8 Hades Canyon
+* Intel Core i7-8709G with Radeon graphics
+* 64GB RAM
 * Storage: 250GB SSD (OS/Tools), 1TB SSD (Lab/Testing)
 
-Testing Environments
-* Active Directory Lab (In Progress)
-  * Windows Server security testing infrastructure
-  * Enterprise attack/defense scenarios
-  * AD vulnerabilities and misconfigurations testing
-* Kali Linux Environment
-  * Security testing VM
-  * Penetration testing suite
-  * Network analysis tools
+## Lab Environment
+Proxmox VE 8.0 Hypervisor managing:
 
-Production Infrastructure
-* Proxmox VE 8.0 Hypervisor
-  * Segmented networks
-  * Isolated test environments
-  * Concurrent lab operations
-* Containers: Proxmox LXCs and Docker
+**PNPT Training Lab**
+* Active Directory Environment
+* Kali Linux for penetration testing
+* Isolated virtual network segment for security testing
+
+**Personal Services**
+* Various containerized applications (Docker)
+* Mix of LXC containers and VMs
+* Media management and automation tools
 
 # 🔒 Security Implementation
 * Network Segmentation
@@ -42,7 +40,7 @@ Production Infrastructure
   * Lab Networks (Isolated)
 * Controls & Monitoring
   * Pi-hole: DNS filtering
-  * NGINX Proxy Manager: SSL/traffic inspection
+  * NGINX Proxy Manager: SSL/port forwarding
   * Step-ca: Certificate management
   * Tailscale: VPN access and logging
 
