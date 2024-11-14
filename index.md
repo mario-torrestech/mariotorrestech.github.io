@@ -1,56 +1,128 @@
-# Mario Torres
-Security operations and testing homelab documentation.
+# Security Learning Environment & Homelab Portfolio
+*A learning-focused environment for developing cybersecurity and infrastructure skills*
 
 [About Me / Professional Background](about.md)
 
-# 🎯 Overview
-A dedicated cybersecurity learning environment for penetration testing and security operations, serving as both practical infrastructure and a comprehensive training platform for the PNPT (Practical Network Penetration Tester) certification and other personal projects.
+## 📋 Executive Summary
+A dedicated homelab environment built for hands-on learning in cybersecurity, with a current focus on [PNPT (Practical Network Penetration Tester) certification](https://certifications.tcm-sec.com/pnpt/) This environment serves as both a practical learning platform and a foundation for developing real-world security testing experience.
 
-# 🎓 Current Path
-* Actively pursuing [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification
-* Building security testing environments in Linux and Windows
-* Hands-on experience with security tools and techniques
+## 🖥️ Infrastructure Overview
 
-# 🖥️ Infrastructure
+### Core Hardware
+- **Primary Server**: Intel NUC8 Hades Canyon
+  - Intel i7-8709G with Radeon Graphics
+  - 64GB RAM
+  - Storage Configuration:
+    - System Drive: 250GB SSD (OS/Tools)
+    - Lab Environment: 1TB SSD (Testing/VM Storage)
 
-## Core Hardware
-Intel NUC8 Hades Canyon
-* Intel Core i7-8709G with Radeon graphics
-* 64GB RAM
-* Storage: 250GB SSD (OS/Tools), 1TB SSD (Lab/Testing)
+### Virtualization Environment
+- **Hypervisor**: Proxmox VE 8.0
+  - Efficient resource management
+  - Snapshot capabilities for system recovery
+  - Virtual networking configuration
 
-## Lab Environment
-Proxmox VE 8.0 Hypervisor managing:
+### Core Services
+1. **Infrastructure Services**
+   - Pi-hole for DNS and network-wide ad blocking
+   - Step-CA running in Docker for internal certificate authority
+   - Nginx Proxy Manager for internal service routing
 
-**PNPT Training Lab**
-* Active Directory Environment
-* Kali Linux for penetration testing
-* Isolated virtual network segment for security testing
+2. **Security Learning Environment**
+   - Dedicated Kali Linux instance
+   - Active Directory testing lab for PNPT study:
+     - Windows domain environment
+     - Attack and defense scenarios
+     - Isolated network segment for safe testing
+   - Currently studying security testing tools and methodologies
+   - Focusing on PNPT certification preparation
 
-**Personal Services**
-* Various containerized applications (Docker)
-* Mix of LXC containers and VMs
-* Media management and automation tools
+3. **Containerized Services**
+   - Docker implementations including:
+     - Step-CA for certificate management
+     - yt-dlp for media management
+   - Learning container security fundamentals
 
-# 🔒 Security Implementation
-* Network Segmentation
-  * VLAN 1: Production
-  * VLAN 2: IoT (Isolated)
-  * VLAN 3: Guest (Zero-trust)
-  * Lab Networks (Isolated)
-* Controls & Monitoring
-  * Pi-hole: DNS filtering
-  * NGINX Proxy Manager: SSL/port forwarding
-  * Step-ca: Certificate management
-  * Tailscale: VPN access and logging
+## 🛡️ Network Architecture
 
-# 💾 Storage & Backup
-* Synology DS920+ (2x 8TB SHR)
-* Backblaze B2 off-site backup
+### Network Segmentation
+| Network | Purpose | Description |
+|---------|----------|-------------|
+| Production | Core Services | Houses infrastructure services (Pi-hole, Step-CA, Nginx) |
+| Admin | Management | Administrative access and management |
+| Testing Lab | Security Testing | Isolated environment containing AD lab and security testing resources |
 
-# 📚 Development Roadmap
-* Complete PNPT certification
-* Enhance AD lab with attack vectors
-* Implement SIEM solution
-* Automate security testing/response
-* Document findings and practices
+### Access Control
+- Isolated internal network - no external exposure
+- Kali instance with controlled access to Admin and Testing environments
+- Network segmentation for service isolation
+- Internal PKI using Step-CA
+
+### Testing Lab Environment
+- Dedicated network segment for Active Directory testing:
+  - Windows domain environment for PNPT preparation
+  - Kali Linux attack machine
+  - Isolated from production services
+  - Focused on AD attack and defense scenarios
+
+### Infrastructure Services
+
+#### Certificate Management
+- Step-CA deployment in Docker
+- Internal certificate authority
+- Learning PKI fundamentals and implementation
+
+#### DNS and Ad Blocking
+- Pi-hole providing:
+  - Local DNS resolution
+  - Network-wide ad blocking
+  - Query logging and monitoring
+  - Custom filtering capabilities
+
+#### Service Routing
+- Nginx Proxy Manager for:
+  - Internal service routing
+  - SSL termination
+  - Access control
+
+## 🔬 Current Learning Focus
+
+### 1. Certification Preparation
+- Actively pursuing [PNPT (Practical Network Penetration Tester)](https://certifications.tcm-sec.com/pnpt/) certification- Active Directory attack methodologies
+- Windows domain security testing
+- Building practical testing experience in isolated lab environment
+
+### 2. Infrastructure Management
+- Service deployment and maintenance
+- Network security implementation
+- System hardening practices
+
+### 3. Skill Development
+- Security testing fundamentals
+- Network security concepts
+- Infrastructure automation basics
+
+## 🛠️ Tools & Technologies
+
+### Core Infrastructure
+- Proxmox VE
+- Docker
+- Pi-hole
+- Step-CA
+- Nginx Proxy Manager
+
+### Security Tools
+- Kali Linux
+- Currently learning:
+  - Security testing methodologies
+  - Common security tools
+  - Network analysis fundamentals
+
+### Development & Automation
+- Basic Bash scripting
+- Service configuration
+- Infrastructure management
+
+---
+*Last Updated: November 2024*  
+*Mario Torres* | *[Your GitHub Profile]*
