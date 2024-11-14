@@ -46,6 +46,7 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 ## 🛡️ Network Architecture
 
 ### Network Segmentation
+
 | Network | Purpose | Description |
 |---------|----------|-------------|
 | Production | Core Services | Houses infrastructure services (Pi-hole, Step-CA, Nginx) |
