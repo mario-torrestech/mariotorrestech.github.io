@@ -1,6 +1,3 @@
-# Security Learning Environment & Homelab Portfolio
-*A learning-focused environment for developing cybersecurity and infrastructure skills*
-
 [About Me / Professional Background](about.md)
 
 ## 📋 Executive Summary

@@ -1,6 +1,6 @@
-title: 
-description: Mario's homelab documentation.
-show_downloads: true
+title: Security Learning Environment & Homelab
+description: A learning-focused environment for developing cybersecurity and infrastructure skills
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
 markdown: kramdown
