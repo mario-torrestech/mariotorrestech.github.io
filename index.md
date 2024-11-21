@@ -123,4 +123,4 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 
 ---
 *Last Updated: November 2024*  
-*Mario Torres* | *[Your GitHub Profile]*
+[About Mario Torres](about.md)
