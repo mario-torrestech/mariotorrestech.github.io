@@ -54,14 +54,26 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 - Isolated internal network - no external exposure
 - Kali instance with controlled access to Admin and Testing environments
 - Network segmentation for service isolation
-- Internal PKI using Step-CA
+- Internal PKI using Step-CA signed certificates
 
-### Testing Lab Environment
+### AD Lab Environment
 - Dedicated network segment for Active Directory testing:
   - Windows domain environment for PNPT preparation
-  - Kali Linux attack machine
+  - Kali Linux used as attack machine, Windows 11/Windows Server
   - Isolated from production services
   - Focused on AD attack and defense scenarios
+
+### Web Application Security Lab
+- **OWASP Testing Environment**
+ - OWASP Juice Shop with Burp Suite and FoxyProxy setup
+ - Hands-on experience with key vulnerabilities:
+   - SQL Injection and authentication attacks
+   - Data exposure and XXE vulnerabilities 
+   - Access control and security misconfigurations
+   - Cross-Site Scripting (XSS) techniques
+   - Component security assessment
+  - Focus on identification, exploitation, and remediation fundamentals
+  - Implementing proper testing methodology and documentation
 
 ### Infrastructure Services
 
