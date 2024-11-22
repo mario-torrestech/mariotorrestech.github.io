@@ -1,5 +1,9 @@
-# Security Learning Environment & Homelab
+---
+title: Homelab
+---
 
+# Security Learning Environment & Homelab
+A learning-focused environment for developing cybersecurity and infrastructure skills
 [About Me / Professional Background](about.md)
 
 ## 📋 Executive Summary
