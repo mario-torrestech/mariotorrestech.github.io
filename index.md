@@ -42,10 +42,11 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 - Internal PKI using Step-CA signed certificates
 
 ### Network Segmentation
-| Network | Purpose | Description |
-|---------|----------|-------------|
-| Production | Core Services | Infrastructure services (Pi-hole, Step-CA, Nginx) |
-| Admin | Management | Administrative access and management |
+
+| Network     | Purpose          | Description                                    |
+|-------------|------------------|------------------------------------------------|
+| Production  | Core Services    | Infrastructure services (Pi-hole, Step-CA, Nginx) |
+| Admin       | Management       | Administrative access and management           |
 | Testing Lab | Security Testing | Isolated AD lab and security testing resources |
 
 ## 🖥️ Infrastructure Overview
