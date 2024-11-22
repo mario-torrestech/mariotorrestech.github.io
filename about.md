@@ -1,3 +1,7 @@
+---
+title: Professional Background
+---
+
 # Professional Background
 IT professional focused on cybersecurity with expertise in enterprise support and security operations.
 
