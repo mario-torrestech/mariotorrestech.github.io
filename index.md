@@ -44,7 +44,7 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 
 
 ## 🏗️ Environment Overview
-![Homelab Infrastructure Diagram](/images/homelab-diagram.svg)
+<img src="/images/homelab-diagram.svg" style="width: 500px; max-width: 100%;" alt="Homelab Infrastructure Diagram">
 
 ### Security Design
 - Isolated internal network - no external exposure
@@ -53,11 +53,12 @@ A dedicated homelab environment built for hands-on learning in cybersecurity, wi
 
 
 ### Network Segmentation
-| Network     | Purpose          | Description                                        |
-|-------------|------------------|----------------------------------------------------|
-| Production  | Core Services    | Infrastructure services (Pi-hole, Step-CA, Nginx)  |
-| Admin       | Management       | Administrative access and management               |
-| Testing Lab | Security Testing | Isolated AD lab and security testing resources     |
+
+| Network     | Purpose         | Description                                    |
+| ----------- | -------------- | ---------------------------------------------- |
+| Production  | Core Services  | Infrastructure services (Pi-hole, Step-CA, Nginx) |
+| Admin       | Management     | Administrative access and management           |
+| Testing Lab | Security Testing | Isolated AD lab and security testing resources |
 
 ## 🖥️ Infrastructure Overview
 ### Core Platform
